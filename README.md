@@ -5,9 +5,9 @@ Usage of GIT is required. Create a repository for this task, solution for each S
 
 ### Considerations
 
-•	The documentation starting on the README.md file need to be clear
-•	We want to see not only the solution but also how you think and your working process, so please keep all your commits accessible and use proper naming standard for them
-•	All steps are required so do not skip any. If you don't know, or don't feel comfortable with the required technology, just try your best and commit what you can
+*	The documentation starting on the README.md file need to be clear
+*	We want to see not only the solution but also how you think and your working process, so please keep all your commits accessible and use proper naming standard for them
+*	All steps are required so do not skip any. If you don't know, or don't feel comfortable with the required technology, just try your best and commit what you can
 
 ### STEP 1
 Create a webhook to include three Custom Product attributes (Brand/MaxBuyQuantity/DiscountPercentage) into GET BASKET OCAPI
