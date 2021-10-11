@@ -1,0 +1,16 @@
+{
+    "hooks": [
+        {
+            "name": "dw.ocapi.shop.basket.items.beforePOST",
+			"script": "./cartridge/scripts/hooks/item_hook_scripts.js"
+        },
+        {
+            "name": "dw.ocapi.shop.basket.items.modifyPOSTResponse",
+			"script": "./cartridge/scripts/hooks/item_hook_scripts.js"
+        },
+        {
+			"name": "dw.ocapi.shop.basket.afterPATCH",
+			"script": "./basket_hook_scripts.js"
+		}
+    ]
+}

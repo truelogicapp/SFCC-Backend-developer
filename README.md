@@ -13,21 +13,18 @@ Usage of GIT is required. Create a repository for this task, solution for each S
 Create a webhook to include three Custom Product attributes (Brand/MaxBuyQuantity/DiscountPercentage) into GET BASKET OCAPI
 https://documentation.b2c.commercecloud.salesforce.com/DOC2/topic/com.demandware.dochelp/OCAPI/current/shop/Resources/Baskets.html?cp=0_15_3_0
 
-### STEP 2
-Create a Decorator in SFRA to show Colors and Inventory information (add specific stock information to the product details) on PDP. 
+#### Solution :
+dw.ocapi.shop.basket.items.beforePOST
+this extension is use to update the productlineItems of the basket and basketResponse
 
-### STEP 3
+dw.ocapi.shop.basket.items.modifyPOSTResponse
+this extension is use to update only the productlineItems of the basketResponse.
 
-Create a Service for SMS gateway and using Service framework send SMS to customer on Order Confirmation at Checkout
+dw.ocapi.shop.basket.afterPATCH
+this extension is use to the basket during the get response.
 
-### STEP 4
-Test all the things. We are going to focus on functional tests. We can use MochaJs or whatever else tool, but we need to be able to run all the tests headless from the command line. 
+#### Configuration 
+configure the resource id (customer and basket) in Open Commerce API Settings in global as well site level. 
 
-
-### Wrapping up
-In the README file, we should be able to find all the information necessary to run the project, the different challenges, and the test. Documentation is highly important for the resolution of this test.
-
-### Delivery
-If your repository is private, please share it with [r.katyal@gmg.com]
 
 
