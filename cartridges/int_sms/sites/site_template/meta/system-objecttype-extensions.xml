@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns="http://www.demandware.com/xml/impex/metadata/2006-10-31">
+<type-extension type-id="SitePreferences">
+    <custom-attribute-definitions>
+        <attribute-definition attribute-id="account_SID">
+            <display-name xml:lang="x-default">Account SID</display-name>
+            <type>string</type>
+            <mandatory-flag>false</mandatory-flag>
+            <externally-managed-flag>false</externally-managed-flag>
+            <min-length>0</min-length>
+        </attribute-definition>
+        <attribute-definition attribute-id="auth_Token">
+            <display-name xml:lang="x-default">Auth Token</display-name>
+            <type>string</type>
+            <mandatory-flag>false</mandatory-flag>
+            <externally-managed-flag>false</externally-managed-flag>
+            <min-length>0</min-length>
+        </attribute-definition>
+        <attribute-definition attribute-id="senderNumber">
+            <display-name xml:lang="x-default">MObile From</display-name>
+            <type>string</type>
+            <mandatory-flag>false</mandatory-flag>
+            <externally-managed-flag>false</externally-managed-flag>
+            <min-length>0</min-length>
+        </attribute-definition>
+        <attribute-definition attribute-id="message">
+            <display-name xml:lang="x-default">Auth Token</display-name>
+            <type>string</type>
+            <mandatory-flag>false</mandatory-flag>
+            <externally-managed-flag>false</externally-managed-flag>
+            <min-length>0</min-length>
+        </attribute-definition>
+    </custom-attribute-definitions>
+    <group-definitions>
+        <attribute-group group-id="SMSService">
+            <display-name xml:lang="x-default">SMS Service</display-name>
+            <attribute attribute-id="account_SID"/>
+            <attribute attribute-id="auth_Token"/>
+            <attribute attribute-id="senderNumber"/>
+            <attribute attribute-id="message"/>
+        </attribute-group>
+    </group-definitions>
+</type-extension>
+</metadata>
